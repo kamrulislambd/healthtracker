@@ -175,6 +175,9 @@ img{
     .banner-section {
         height: 100vh;
     }
+    .banner-section form{
+        width: 100%;
+    }
     .banner-section .form-control {
         margin-bottom: 1rem;
     }
@@ -198,6 +201,10 @@ img{
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) {
+    .banner-section form{
+        width: 50%;
+        margin: 0 auto;
+    }
     .app-btn .btn-apple,
     .app-btn .btn-google {
         padding: 0.8rem 1rem;
