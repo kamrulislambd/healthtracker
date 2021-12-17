@@ -1,0 +1,244 @@
+img{
+    max-width: 100%;
+}
+.header {
+    background: #fff !important;
+    padding: 2rem 0;
+}
+
+.header span {
+    height: 3rem;
+    width: 2.8rem;
+    background: #6278DF;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.banner-section{
+    background: url(./assets/images/mbr-10.jpg) no-repeat center center;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.438);
+    z-index: -1;
+}
+
+.banner-section input {
+    padding: 15px 20px;
+}
+
+.banner-section .btn {
+    padding: 12px 18px;
+    background: #5ba533;
+    color: #fff;
+    outline: none;
+}
+.banner-section button:hover{
+    background: white;
+    border: #6278DF;
+    color: #6278DF;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+.service-item{
+    height: 250px;
+}
+.service-item:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(75, 106, 245, 0.1);
+}
+.service-img{
+    width: 40%;
+    height: 100%;
+}
+.service-text{
+    width: 60%;
+    
+}
+.single-portfolio a{
+    position: relative;
+    display: block;
+}
+.single-portfolio a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(85, 144, 240, 0.63);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.single-portfolio:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+.userplan:hover{
+        box-shadow: 0px 1px 15px 0px rgba(98, 121, 223, 0.644);
+}
+.userplan i {
+    color: #6278df;
+    font-size: 2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    width: 25px;
+}
+
+.userplan .user-btn {
+    display: block;
+    background: white;
+    color: #6278df !important;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px rgba(98, 121, 223, 0.644);
+}
+
+.userplan:hover .user-btn{
+    background: #6278DF;
+    color: #fff !important;
+}
+.userplan .user-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+.testimonial-author img {
+    width: 5rem;
+    margin-right: .8rem;
+}
+
+.testimonial-author p {
+    text-align: left;
+}
+.team-section{
+    background: #f7f9ff;
+}
+.single-member img {
+    width: 8rem;
+    margin-top: -5rem;
+}
+.single-member:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64, 87, 191, 0.4);
+    background: #fff;
+}
+.app-btn .btn-apple {
+    padding: 1rem 2rem;
+    /* width: 20%; */
+    border: 2px solid #5ba533;
+    color:  #5ba533;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.app-btn .btn-apple:hover{
+    background: #5ba533;
+    color: #fff;
+    box-shadow: 0px 0px 10px 5px rgb(91 165 51 / 62%);
+}
+
+.app-btn .btn-google {
+    padding: 1rem 2rem;
+    width: 20%;
+    color: #fff !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+    background: #5ba533;
+    box-shadow: 0px 0px 10px 5px rgb(91 165 51 / 62%);
+}
+.app-btn .btn-google:hover{
+    background: #000;
+    color: #fff;
+    box-shadow: none;
+}
+
+
+/* Responsive */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .banner-section {
+        height: 100vh;
+    }
+    .banner-section .form-control {
+        margin-bottom: 1rem;
+    }
+    .single-member img {
+        margin-top: 0;
+    }
+    .contact-section .w-50 {
+        width: 100% !important;
+    }
+    .app-btn {
+        flex-direction: column;
+    }
+    .app-btn .btn-apple,
+    .app-btn .btn-google {
+        padding: 0.8rem 1rem;
+        width: 60%;
+        font-size: 1.5rem;
+    }
+   
+    
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 577px) {
+    .app-btn .btn-apple,
+    .app-btn .btn-google {
+        padding: 0.8rem 1rem;
+        width: 40%;
+        font-size: 1.5rem;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .banner-section {
+        height: 70vh;
+    }
+    .contact-section .w-50 {
+        width: 50% !important;
+    }
+    .banner-section .form-control {
+        margin-bottom: 1rem;
+    }
+    .app-btn .btn-apple,
+    .app-btn .btn-google {
+        padding: 0.8rem 1rem;
+        width: 30%;
+        font-size: 1.5rem;
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 991px){
+    .header span{
+        background: #fff;
+    }
+}
+
+@media (min-width: 992px) {
+    .single-member img {
+        margin-top: -5rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
